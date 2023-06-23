@@ -6,6 +6,8 @@
     <meta name="description" content="Visionnez le nouveau film épique des aventures des Mario Brothers!">
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
     <title>The Super Mario Bros. le film - Accueil</title>
@@ -16,35 +18,101 @@
     <main>
 
         <!-- BASE CODE POUR SE GUIDER -->
-        <div class="fond bg-amber-400">
+<!--         <div class="fond bg-amber-400">
             <h1 class="text-4xl font-semibold uppercase my-2">The SUPER MARIOS BROS. le film</h1>
             <p class="text-base font-light tracking-wide my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus dicta, iusto omnis vero praesentium quasi aliquid libero quia id quisquam nisi laudantium minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ratione obcaecati dolorum quod omnis, provident cumque eos aspernatur distinctio dolore, illo odio perspiciatis aut sapiente facere beatae ea. Maxime, repudiandae?</p>
         </div>
-        <div class="fond bg-red-600">
+        <div class="fond bg-red-600"> -->
             <!-- BOUTONS -->
-            <a href="#" class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowYellow" >Select quantity</a>
+<!--             <a href="#" class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowYellow" >Select quantity</a>
             <a href="#" class="bg-red-600 hover:bg-red-700 focus:bg-red-700 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowRed" >Select quantity</a>
             <a href="#" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowBlue" >Select quantity</a>
             <a href="#" class="bg-lime-500 hover:bg-lime-600 focus:bg-lime-600 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowGreen" >Select quantity</a>
             <h2 class="text-3xl font-semibold tracking-wide uppercase my-2">Images et extraits</h2>
-        </div>
-        <div class="fond bg-blue-700">
+        </div> -->
+<!--         <div class="fond bg-blue-700">
             <h3 class="text-xl font-medium tracking-wide my-2">Wade Warren</h3>
             <h4 class="text-base font-light tracking-wide my-2">Founder & CEO</h4>
             <p class="text-sm font-light tracking-wide my-2">Physical space is often conceived in three linear dimensions.</p>
             <p class="text-lg font-light tracking-wide my-2">Physical space is often conceived in three linear dimensions.</p>
         
-        </div>
-        <div class="fond bg-lime-500">
+        </div> -->
+<!--         <div class="fond bg-lime-500">
             
-        </div>
+        </div> -->
 
         <!-- PRESENTATION -->
-        <section>
-            <div class="md:container">
-               
+        <section class="container-fluid grid grid-cols-12 bg-red-600 h-full p-8 flex justify-between">
+            <div class="col-span-12 md:col-span-5">
+                <h1 class="text-4xl font-semibold uppercase my-2">The SUPER MARIOS BROS. le film</h1>
+                <p class="text-base font-light tracking-wide my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus dicta, 
+                    iusto omnis vero praesentium quasi aliquid libero quia id quisquam nisi laudantium minima. Lorem ipsum dolor sit, 
+                </p>
+                <div>
+                    <a href="#" class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowYellow" >Select quantity</a>
+                    <a href="#" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 font-normal tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowBlue"><span>+</span>Buy now</a>     
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-7">      
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </section>
+
+<!--         <section class="container-fluid my-2 grid grid-cols-12 m-0">
+            <div class="col-span-6 md:col-span-3 bg-red-500">bonjour</div>
+            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
+            <div class="col-span-6 md:col-span-3 bg-blue-500">bonjour</div>
+            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
+            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
+            <div class="col-span-6 md:col-span-9 bg-red-500">bonjour</div>
+            <div class="col-span-12 md:col-span-10 bg-yellow-500">bonjour</div>
+            <div class="col-span-12 md:col-span-2 bg-green-500">bonjour</div>
+        </section> -->
 
 
         <!-- IMAGES ET EXTRAITS -->
