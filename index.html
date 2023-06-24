@@ -19,23 +19,38 @@
 
 
 
-    <section class="container-fluid grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
-        <div class="col-span-12 mb-4 flex flex-col items-center md:col-span-5 md:mr-4 md:items-start">
-            <h2 class="text-3xl text-center text-red-600 font-semibold uppercase mb-6 md:text-left lg:text-4xl">Image et extraits</h2>
-            <p class="text-sm text-center text-blue-700 font-light tracking-wide mb-6 md:text-left md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus dicta, 
-                iusto omnis vero.
+    <section class="bg-red-600 container-fluid grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
+        <div class="col-start-2 col-end-12 mb-4 flex flex-col items-center">
+            <h2 class="text-3xl text-center text-white font-semibold tracking-wide uppercase mb-4 md:text-left lg:text-4xl">Image et extraits</h2>
+            <p class="text-sm text-center text-white font-light tracking-wide mb-4 md:text-left md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <div class="mt-4 mb-8 md:flex md:flex-col md:mt-2 md:mb-0 lg:flex-row">
-                <a href="#" class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 text-base tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowYellow 
-                md:text-sm md:ml-0 md:mb-3">
-                    Select quantity</a>
-                <a href="#" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-base tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowBlue 
-                md:text-sm md:ml-0 md:mb-3">
-                    <span>+</span>Buy now</a>     
-            </div>
-        </div>
-        <div class="bg-red-600 col-span-12 md:col-span-7 md:ml-4">      
-            
+            <form id="formNewsletter" action="#" class="mt-2 mb-14 flex flex-row items-center justify-center">
+                <div>
+                    <label for="newsletter" class="hidden">Courriel</label>
+                    <input class="py-1 px-3 text-sm text-blue-800 hover:border-blue-800 border-4 focus:border-blue-800 " type="email" id="newsletter" name="newsletter" placeholder="Courriel" required>
+                </div>
+                <div>
+                    <label for="subscribeNewsletter" class="hidden">Soumettre l'inscription à l'infolettre</label>
+                    <button type="submit" id="subscribeNewsletter" name="subscribeNewsletter" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-base tracking-wide 
+                    py-2 px-4 ml-4 rounded-full btn--boxShadowBlue">S'abonner</button>
+                </div>
+            </form>
+            <div class="grid">
+                <figure class="mb-4 sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                    <img class="object-cover" src="Images/photo-test.jpeg" alt="">
+                    <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
+                </figure>
+                <figure class="mb-4 sm:col-start-2 sm:col-end-12 grid md:col-start-7 md:col-end-12 md:ml-2 xl:col-start-5 xl:col-end-9">
+                    <img class="object-cover" src="Images/photo-test.jpeg" alt="">
+                    <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
+                </figure>
+                <figure class="mb-4 sm:col-start-2 sm:col-end-12 md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-9 xl:col-end-13 xl:ml-4">
+                    <img class="object-cover" src="Images/photo-test.jpeg" alt="">
+                    <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
+                </figure>
+                <iframe class="hidden md:grid md:col-start-7 md:col-end-12 md:ml-2 md:object-cover md:h-5/6 xl:col-start-3 xl:col-end-11 xl:h-96 xl:mt-8" width="97%" src="https://www.youtube.com/embed/qevgo4sHxeQ" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
         </div>
     </section>
 
