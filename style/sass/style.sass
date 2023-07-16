@@ -23,3 +23,63 @@
 .fond 
     width: 100%
     height: 200px
+
+
+@media screen and (min-width: 768px) and (max-width: 4000px)
+    %inspiration__elementsContainer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 3rem
+
+    .inspiration__elementsContainer--row
+        @extend %inspiration__elementsContainer
+        flex-direction: row
+
+    .inspiration__elementsContainer--rowreverse
+        @extend %inspiration__elementsContainer
+        flex-direction: row-reverse
+
+    %inspiration__text
+        text-align: left
+        width: 50%
+        margin-bottom: 0
+
+    .inspiration__text--left
+        @extend %inspiration__text
+        margin-right: 1rem
+
+    .inspiration__text--right
+        @extend %inspiration__text
+        margin-left: 1rem
+
+    %inspiration__img
+        width: 50%
+        height: auto
+        margin-bottom: 0
+
+    .inspiration__img--left
+        @extend %inspiration__img
+        margin-right: 1rem
+
+    .inspiration__img--right
+        @extend %inspiration__img
+        margin-left: 1rem
+
+
+@media screen and (max-width: 768px)
+    .inspiration__text
+        text-align: center
+        margin-bottom: 1rem
+
+    .inspiration__img
+        object-fit: cover
+        margin-bottom: 3rem
+
+    .inspiration__img--last
+        object-fit: cover
+        margin-bottom: 0rem
+
+
+
+
