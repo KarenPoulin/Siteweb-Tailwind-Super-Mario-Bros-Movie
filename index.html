@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -26,8 +26,8 @@
           </a>
       </div>
     
-      <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current bg-amber-500 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
-      <input class="hidden" type="checkbox" id="menu-toggle" name="menu-toggle" />
+      <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current bg-red-600 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" name="menu-toggle">
     
       <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
           <nav>
@@ -41,48 +41,46 @@
 
 
 
-<main>
-
-
-        <!-- PRESENTATION -->
-        <section class="container-fluid grid grid-cols-12 h-full p-12 md:items-center xl:px-16">
+<main id="content">
+    <a class="sr-only" href="#content">Aller au contenu principal</a>
+    <!-- PRESENTATION -->
+    <section class="w-full px-5 mx-auto grid grid-cols-12 h-full p-12 md:items-center xl:px-16">
             <div class="col-span-12 mb-4 flex flex-col items-center md:col-span-5 md:mr-4 md:items-start">
-                <h1 class="text-3xl text-center text-red-600 font-semibold uppercase mb-6 md:text-left lg:text-4xl">The SUPER MARIOS BROS. le film</h1>
-                <p class="text-sm text-center text-blue-700 font-light tracking-wide mb-6 md:text-left md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus dicta, 
-                    iusto omnis vero praesentium ipsum dolor sit amet consectetur.
+                <h1 class="text-3xl sm:text-center text-red-600 font-semibold uppercase mb-6 md:text-left lg:text-4xl">The SUPER MARIOS BROS. le film</h1>
+                <p class="text-sm sm:text-center text-blue-700 font-light tracking-wide mb-6 md:text-left md:mb-4">Le film culte qui a donné vie à l'univers emblématique des jeux vidéo sur grand écran.
                 </p>
                 <div class="mt-4 mb-8 md:flex md:flex-col md:mt-2 md:mb-0 lg:flex-row">
                     <a href="#" class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 text-base tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowYellow 
                     md:text-sm md:ml-0 md:mb-3">
-                        Select quantity</a>
+                        Louer</a>
                     <a href="#" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-base tracking-wide py-2 px-4 mx-2 rounded-full btn--boxShadowBlue 
                     md:text-sm md:ml-0 md:mb-3">
-                        <span>+</span>Buy now</a>     
+                        <span>+</span>Acheter</a>     
                 </div>
             </div>
             <div class="col-span-12 md:col-span-7 md:ml-4">      
-                <div id="default-carousel" class="relative w-full" data-carousel="static">
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-40 lg:h-56 xl:h-72">
                         <!-- Item 1 -->
                         <div class="hidden object-cover duration-1000 ease-in-out" data-carousel-item>
-                            <img src="Images/photo-test.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="Images/slider-image-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Groupe de personnages sur la Rainbow Road">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden object-cover duration-1000 ease-in-out" data-carousel-item>
-                            <img src="Images/photo-test.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="Images/slider-image-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Mario qui saute sur des blocs">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden object-cover duration-1000 ease-in-out" data-carousel-item>
-                            <img src="Images/photo-test.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="Images/slider-image-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Bowser">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden object-cover duration-1000 ease-in-out" data-carousel-item>
-                            <img src="Images/photo-test.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="Images/slider-image-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="peache sur une moto sur la Rainbow Road">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden object-cover duration-1000 ease-in-out" data-carousel-item>
-                            <img src="Images/photo-test.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="Images/slider-image-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Donkey Kong en plein saut">
                         </div>
                     </div>
                     <!-- Slider indicators -->
@@ -101,78 +99,74 @@
                         </span>
                     </button>
                     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-amber-300/60  group-hover:bg-amber-500group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-amber-300/60  group-hover:bg-amber-500 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
                             <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             <span class="sr-only">Next</span>
                         </span>
                     </button>
                 </div>
             </div>
-        </section>
-
-<!--         <section class="container-fluid my-2 grid grid-cols-12 m-0">
-            <div class="col-span-6 md:col-span-3 bg-red-500">bonjour</div>
-            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
-            <div class="col-span-6 md:col-span-3 bg-blue-500">bonjour</div>
-            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
-            <div class="col-span-6 md:col-span-3 bg-green-500">bonjour</div>
-            <div class="col-span-6 md:col-span-9 bg-red-500">bonjour</div>
-            <div class="col-span-12 md:col-span-10 bg-yellow-500">bonjour</div>
-            <div class="col-span-12 md:col-span-2 bg-green-500">bonjour</div>
-        </section> -->
+    </section>
 
 
-        <!-- IMAGES ET EXTRAITS -->
-        <section class="bg-red-600 container-fluid grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
+    <!-- IMAGES ET EXTRAITS -->
+    <section class="bg-red-600 w-full px-5 mx-auto grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
           <div class="col-start-2 col-end-12 mb-4 flex flex-col items-center">
-              <h2 class="text-3xl text-center text-white font-semibold tracking-wide uppercase mb-4 md:text-left lg:text-4xl">Image et extraits</h2>
-              <p class="text-sm text-center text-white font-light tracking-wide mb-4 md:text-left md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <form id="formNewsletter" action="#" class="mt-2 mb-14 flex flex-row items-center justify-center">
-                  <div>
-                      <label for="newsletter" class="hidden">Courriel</label>
-                      <input class="py-1 px-3 text-sm text-blue-800 hover:border-blue-800 border-4 focus:border-blue-800 " type="email" id="newsletter" name="newsletter" placeholder="Courriel" required>
+              <div class="grid grid-cols-12">
+                  <div class="col-start-3 col-end-11">
+                      <h2 class="text-3xl text-center text-white font-semibold tracking-wide uppercase mb-4 md:text-left lg:text-4xl">Image et extraits</h2>
+                      <p class="text-sm text-center text-white font-light tracking-wide mb-4 md:text-left md:mb-4">Des mondes fantastiques, des sauts épiques et des batailles épiques - Super Mario Bros, le film vous transporte dans une aventure visuelle captivante.
+                      </p>
+                      <form id="formNewsletter" action="#" class="mt-2 mb-14 flex flex-row items-center justify-center">
+                          <div>
+                              <label for="newsletter" class="hidden">Courriel</label>
+                              <input class="py-1 px-3 text-sm text-blue-800 hover:border-blue-800 border-4 focus:border-blue-800 " type="email" id="newsletter" name="newsletter" placeholder="Courriel" required>
+                          </div>
+                          <div>
+                              <label for="subscribeNewsletter" class="hidden">Soumettre l'inscription à l'infolettre</label>
+                              <button type="submit" id="subscribeNewsletter" name="subscribeNewsletter" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-base tracking-wide 
+                              py-2 px-4 ml-4 rounded-full btn--boxShadowBlue">S'abonner</button>
+                          </div>
+                      </form>
                   </div>
-                  <div>
-                      <label for="subscribeNewsletter" class="hidden">Soumettre l'inscription à l'infolettre</label>
-                      <button type="submit" id="subscribeNewsletter" name="subscribeNewsletter" class="bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 text-base tracking-wide 
-                      py-2 px-4 ml-4 rounded-full btn--boxShadowBlue">S'abonner</button>
-                  </div>
-              </form>
+              </div>
+
               <div class="grid">
-                  <figure class="mb-4 sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
-                      <img class="object-cover" src="Images/photo-test.jpeg" alt="">
-                      <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
-                  </figure>
-                  <figure class="mb-4 sm:col-start-2 sm:col-end-12 grid md:col-start-7 md:col-end-12 md:ml-2 xl:col-start-5 xl:col-end-9">
-                      <img class="object-cover" src="Images/photo-test.jpeg" alt="">
-                      <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
-                  </figure>
-                  <figure class="mb-4 sm:col-start-2 sm:col-end-12 md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-9 xl:col-end-13 xl:ml-4">
-                      <img class="object-cover" src="Images/photo-test.jpeg" alt="">
-                      <figcaption class="text-center pt-1 text-sm font-extralight tracking-wide">Description photo</figcaption>
-                  </figure>
-                  <iframe class="hidden md:grid md:col-start-7 md:col-end-12 md:ml-2 md:object-cover md:h-5/6 xl:col-start-3 xl:col-end-11 xl:h-96 xl:mt-8" width="97%" src="https://www.youtube.com/embed/qevgo4sHxeQ" title="YouTube video player" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                  <div class="mb-4 sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                    <img class="object-cover rounded-lg border-8 border-solid border-white"  src="Images/image-extraits-toad.jpg" alt="Toad qui part à l'aventure">
+                    <p class="text-center pt-1 text-sm font-extralight tracking-wide">Toad part à l'aventure.</p>
+                  </div>
+                  <div class="mb-4 sm:col-start-2 sm:col-end-12 md:col-start-7 md:col-end-12 md:ml-2 xl:col-start-5 xl:col-end-9">
+                      <img class="object-cover rounded-lg border-8 border-solid border-white" src="Images/image-extraits-defi.jpg" alt="Défi à relever pr Mario">
+                      <p class="text-center pt-1 text-sm font-extralight tracking-wide">Toad part à l'aventure.</p>
+                  </div>
+                  <div class="mb-4 sm:col-start-2 sm:col-end-12 md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-9 xl:col-end-13 xl:ml-4">
+                      <img class="object-cover rounded-lg border-8 border-solid border-white" src="Images/image-extraits-mario-peach.jpg" alt="Peach et Mario discutent">
+                      <p class="text-center pt-1 text-sm font-extralight tracking-wide">Peach et Mario discutent.</p>
+                  </div>
+                  <iframe class="hidden rounded-lg border-8 border-solid border-white md:grid md:col-start-7 md:col-end-12 md:ml-2 md:h-44 md:w-full md:object-cover xl:col-start-3 xl:col-end-11 xl:h-96 xl:mt-8" src="https://www.youtube.com/embed/qevgo4sHxeQ" title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" loading="lazy" allowfullscreen></iframe>
              </div>
-        </section>
+          </div>
+    </section>
 
-
-    <section class="bg-blue-800 container-fluid grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
+    <!-- ACTEURS -->
+    <section class="bg-blue-800 w-full px-5 mx-auto grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
       <div class="col-start-2 col-end-12 mb-4 flex flex-col">
           <h2 class="text-3xl text-left text-white font-semibold tracking-wide uppercase mb-2 lg:text-4xl">Présentation des acteurs</h2>
-          <p class="text-sm text-left text-white font-light tracking-wide mb-2 md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p class="text-sm text-left text-white font-light tracking-wide mb-2 md:mb-4">Retrouvez une distribution de talents exceptionnels avec Chris Pratt, 
+            dans le rôle de Mario, et une équipe d'acteurs talentueux qui donnent vie à vos personnages préférés de l'univers de Mario.
           </p>
       </div>
       <div class="col-start-1 col-end-13">
           <div class="bg-white py-12 px-12 grid grid-cols-6 gap-4 rounded-xl md:py-12 md:px-12 xl:py-16 xl:px-20 xl:grid-cols-12 xl:gap-2">
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Chris_Pratt.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Chris_Pratt.jpg" alt="Photo du visage de Chris Pratt">
                   <h3 class="text-blue-800 text-sm font-semibold uppercase mt-2 lg:text-base">Chris pratt</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Mario</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">Les Gardiens de la Galaxie(2014).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/PrattPrattPratt/" target="_blank">
+                      <a href="https://www.facebook.com/PrattPrattPratt/" aria-label="Lien vers la page facebook de Chris Pratt" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -180,7 +174,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/prattprattpratt" target="_blank">
+                      <a href="https://twitter.com/prattprattpratt" aria-label="Lien vers la page twitter de Chris Pratt" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -189,7 +183,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/prattprattpratt/" target="_blank">
+                      <a href="https://www.instagram.com/prattprattpratt/" aria-label="Lien vers la page instagram de Chris Pratt" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -208,29 +202,29 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Anya_Taylor-Joy.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Anya_Taylor-Joy.jpg" alt="Photo du visage de Anya Taylor-Joy">
                   <h3 class="text-blue-800 text-sm font-semibold  uppercase mt-2 lg:text-base">Anya Taylor-Joy</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Princesse Peach</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">Le jeu de la dame (2020), The Witch (2015).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/AnyaJoyTaylor" target="_blank">
+                      <a href="https://www.facebook.com/AnyaJoyTaylor" aria-label="Lien vers la page facebook de Anya Taylor-Joy" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
                           1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 
                           6.75-7.951z"/>
+                          </svg>  
                       </a>
-                        </svg>
-                      <a href="https://twitter.com/AnyaTaylor_Joy" target="_blank">
+                      <a href="https://twitter.com/AnyaTaylor_Joy" aria-label="Lien vers la page twitter de Anya Taylor-Joy" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
                           1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 
                           6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                        </svg>
+                          </svg>
                       </a>
-                      <a href="https://www.instagram.com/anyataylorjoy/" target="_blank">
+                      <a href="https://www.instagram.com/anyataylorjoy/" aria-label="Lien vers la page instagram de Anya Taylor-Joy" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -244,17 +238,17 @@
                           0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 
                           1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 
                           1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                        </svg>
+                          </svg>
                       </a>
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Jack_Black.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Jack_Black.jpg" alt="Photo du visage de Jack Black">
                   <h3 class="text-blue-800 text-sm font-semibold uppercase mt-2 lg:text-base">Jack Black</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Bowser</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">Rock Academy (2003), High Fidelity (200).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/JackBlack/" target="_blank">
+                      <a href="https://www.facebook.com/JackBlack/" aria-label="Lien vers la page facebook de Jack Black" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -262,7 +256,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/JackBlackBeer" target="_blank">
+                      <a href="https://twitter.com/JackBlackBeer" aria-label="Lien vers la page twitter de Jack Black" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -271,7 +265,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/jackblack/" target="_blank">
+                      <a href="https://www.instagram.com/jackblack/" aria-label="Lien vers la page instagram de Jack Black" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -290,12 +284,12 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Charlie_Day.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Charlie_Day.jpg" alt="Photo du visage de Charlie Day">
                   <h3 class="text-blue-800 text-sm font-semibold  uppercase mt-2 lg:text-base">Charlie Day</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Luigi</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">Combat de prof (2017), La grande aventure Lego (2014).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/search/top/?q=Charlie%20Day" target="_blank">
+                      <a href="https://www.facebook.com/search/top/?q=Charlie%20Day" aria-label="Lien vers la page facebook de Charlie Day" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" >
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -303,7 +297,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/its_charlie_day" target="_blank">
+                      <a href="https://twitter.com/its_charlie_day" aria-label="Lien vers la page twitter de Charlie Day" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -312,7 +306,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/charlie_day/" target="_blank">
+                      <a href="https://www.instagram.com/charlie_day/" aria-label="Lien vers la page instagram de Charlie Day" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -331,12 +325,12 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Seth_Rogen.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Seth_Rogen.jpg" alt="Photo du visage de Seth Rogen">
                   <h3 class="text-blue-800 text-sm font-semibold uppercase mt-2 lg:text-base">Seth Rogen</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Donkey Kong</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">C'est la fin (2013), Délire express (2008).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/sethrogen" target="_blank">
+                      <a href="https://www.facebook.com/sethrogen" aria-label="Lien vers la page facebook de Seth Rogen" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -344,7 +338,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/Sethrogen" target="_blank">
+                      <a href="https://twitter.com/Sethrogen" aria-label="Lien vers la page twitter de Seth Rogen" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -353,7 +347,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/sethrogen/" target="_blank">
+                      <a href="https://www.instagram.com/sethrogen/" aria-label="Lien vers la page instagram de Seth Rogen" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -372,12 +366,12 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-span-2 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Keegan-michael_key.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Keegan-michael_key.jpg" alt="Photo du visage de Keegan-Michael Key">
                   <h3 class="text-blue-800 text-sm font-semibold  uppercase mt-2 lg:text-base">Keegan-Michael Key</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Toad</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">The Predator (2018), Keanu (2016).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/keeganmichaelkey/" target="_blank">
+                      <a href="https://www.facebook.com/keeganmichaelkey/" aria-label="Lien vers la page facebook de Keegan-Michael Key" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -385,7 +379,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/KeeganMKey" target="_blank">
+                      <a href="https://twitter.com/KeeganMKey" aria-label="Lien vers la page twitter de Keegan-Michael Key" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -394,7 +388,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/keeganmichaelkey/" target="_blank">
+                      <a href="https://www.instagram.com/keeganmichaelkey/" aria-label="Lien vers la page instagram de Keegan-Michael Key" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -413,12 +407,12 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-start-2 md:col-end-4 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Charles_Martinet.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Charles_Martinet.jpg" alt="Photo du visage de Charles Martinet">
                   <h3 class="text-blue-800 text-sm font-semibold uppercase mt-2 lg:text-base">Charles Martinet</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Giuseppe</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">The Game (1997), Neuf mois aussi (1995).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/Charles.Martinet.Fan.Page" target="_blank">
+                      <a href="https://www.facebook.com/Charles.Martinet.Fan.Page" aria-label="Lien vers la page facebook de Charles Martinet" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -426,7 +420,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/CharlesMartinet" target="_blank">
+                      <a href="https://twitter.com/CharlesMartinet" aria-label="Lien vers la page twitter de Charles Martinet" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -435,7 +429,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/charlesmartinetitsame/" target="_blank">
+                      <a href="https://www.instagram.com/charlesmartinetitsame/" aria-label="Lien vers la page instagram de Charles Martinet" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -454,12 +448,12 @@
                   </div>
               </div>
               <div class="col-span-3 mb-2 md:col-start-4 md:col-end-6 xl:col-span-3">
-                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Sebastian_Maniscalco.jpg" alt="">
+                  <img class="object-cover rounded-lg w-full aspect-square" src="Images/acteurs-Sebastian_Maniscalco.jpg" alt="Photo du visage de Sebastian Maniscalco">
                   <h3 class="text-blue-800 text-sm font-semibold  uppercase mt-2 lg:text-base">Sebastian Maniscalco</h3>
                   <h4 class="text-red-600 text-sm tracking-wide">Spike</h4>
-                  <p class="text-black text-xs font-extralight my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="text-black text-xs font-extralight my-2">Green Book: Sur les routes du sud (2108).</p>
                   <div class="flex flex-row">
-                      <a href="https://www.facebook.com/sebastiancomedy/" target="_blank">
+                      <a href="https://www.facebook.com/sebastiancomedy/" aria-label="Lien vers la page facebook de Sebastian Maniscalco" role="button" target="_blank">
                           <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
@@ -467,7 +461,7 @@
                           6.75-7.951z"/>
                         </svg>
                       </a>
-                      <a href="https://twitter.com/SebastianComedy" target="_blank">
+                      <a href="https://twitter.com/SebastianComedy" aria-label="Lien vers la page twitter de Sebastian Maniscalco" role="button" target="_blank">
                           <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
@@ -476,7 +470,7 @@
                           13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
                       </a>
-                      <a href="https://www.instagram.com/sebastiancomedy/" target="_blank">
+                      <a href="https://www.instagram.com/sebastiancomedy/" aria-label="Lien vers la page instagram de Sebastian Maniscalco" role="button" target="_blank">
                           <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800" 
                           xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
@@ -498,23 +492,24 @@
       </div>
     </section>
 
-
-    <section class="bg-red-600 container-fluid grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
-        <div class="col-start-3 col-end-11 flex flex-column md:col-start-2 md:col-end-12">
+    <!-- INSPIRATIONS -->
+    <section class="bg-white w-full px-5 mx-auto grid grid-cols-12 h-full p-12 justify-between md:items-center xl:px-16">
+        <h3 class="hidden">Inspirations</h3>
+        <div class="col-start-2 col-end-12 flex flex-column md:col-start-2 md:col-end-12">
             <div class="inspiration__elementsContainer--rowreverse">
-                <p class="inspiration__text inspiration__text--right text-sm text-white font-light tracking-wide md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reprehenderit, nobis. Culpa, nisi! Cumque, cum expedita eveniet debitis dolores saepe omnis iste, cupiditate ab!</p>
-                <img class="inspiration__img inspiration__img--left md:overflow-hidden" src="Images/photo-test.jpeg" alt="">  
+                <p class="border-b-4 border-t-4 border-amber-400 border-solid pb-2.5 pt-2.5 inspiration__text inspiration__text--right text-sm text-amber-500 font-normal tracking-wide lg:text-base">Le film s'inspire de Super Mario 64, 
+                  le jeu révolutionnaire qui a transporté les joueurs dans des mondes en 3D, offrant une expérience immersive similaire sur grand écran.</p>
+                <img class="inspiration__img inspiration__img--left md:overflow-hidden border-8 border-solid border-amber-500 rounded-lg" src="Images/inspiration-n64-rainbowroad.jpg" alt="Mario Kart Nintendo 64 sur la piste Rainbow Road">  
             </div>
             <div class="inspiration__elementsContainer--row">
-                <p class="inspiration__text inspiration__text--left text-sm text-white font-light tracking-wide md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reprehenderit, nobis. Culpa, nisi! Cumque, cum expedita eveniet debitis dolores saepe omnis iste, cupiditate ab!</p>
-                <img class="inspiration__img inspiration__img--right md:overflow-hidden" src="Images/photo-test.jpeg" alt="">  
+                <p class="border-b-4 border-t-4 border-amber-400 border-solid pb-2.5 pt-2.5 inspiration__text inspiration__text--left text-sm text-amber-500 font-normal tracking-wide lg:text-base">Le film puise aussi son inspiration dans le premier jeu de Donkey Kong, où l'aventure a commencé, 
+                  en apportant une touche nostalgique et rendant hommage à l'un des premiers succès de l'univers de Mario.</p>
+                <img class="inspiration__img inspiration__img--right md:overflow-hidden border-8 border-solid border-amber-500 rounded-lg" src="Images/inspiration-donkeykong.jpg" alt="Premier jeu vidéo de Donkey Kong">  
             </div>
             <div class="inspiration__elementsContainer--rowreverse">
-                <p class="inspiration__text inspiration__text--right text-sm text-white font-light tracking-wide md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reprehenderit, nobis. Culpa, nisi! Cumque, cum expedita eveniet debitis dolores saepe omnis iste, cupiditate ab!</p>
-                <img class="inspiration__img--last inspiration__img--left md:overflow-hidden" src="Images/photo-test.jpeg" alt="">  
+                <p class="border-b-4 border-t-4 border-amber-400 border-solid pb-2.5 pt-2.5 inspiration__text inspiration__text--right text-sm text-amber-500 font-normal tracking-wide lg:text-base">Le film trouve son inspiration dans le jeu emblématique Super Mario 64, 
+                  capturant la magie de l'exploration en 3D et offrant une aventure cinématographique épique dans un monde rempli de sauts acrobatiques et de mystères à résoudre.</p>
+                <img class="inspiration__img--last inspiration__img--left md:overflow-hidden border-8 border-solid border-amber-500 rounded-lg" src="Images/inspiration-mario64-mushroom-kingdom.jpg" alt="Super Mario 64, Mushroom Kingdom">  
             </div>
         </div>
     </section>
