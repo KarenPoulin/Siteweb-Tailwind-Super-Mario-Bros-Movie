@@ -78,4 +78,9 @@
        object-fit: cover;
     margin-bottom: 0rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media screen and (max-width: 1023px) {
+  .tail-hidden {
+    display: none !important;
+  }
+}

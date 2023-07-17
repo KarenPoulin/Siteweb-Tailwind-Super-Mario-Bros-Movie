@@ -1,39 +1,523 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Visionnez le nouveau film épique des aventures des Mario Brothers!">
     <link rel="stylesheet" href="style/css/normalize.css">
     <link rel="stylesheet" href="style/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>The Super Mario Bros. le film - Tournage</title>
 </head>
+
 <body>
-    
     <!--   HEADER -->
     <!-- Taken from https://tailwindcomponents.com/component/responsive-navabr -->
 
     <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center py-2">
         <div class="flex-1 flex justify-between items-center">
             <a href="index.html">
-                <img class="w-24 p-1 focus:border-red-600 focus:border-10 focus:border-solid" src="Images/logo_nav.png" alt="Logo">
+                <img class="w-24 p-1 focus:border-red-600 focus:border-10 focus:border-solid" src="Images/logo_nav.png"
+                    alt="Logo">
             </a>
         </div>
-    
-        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current bg-red-600 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg
+                class="fill-current bg-red-600 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg></label>
         <input class="hidden" type="checkbox" id="menu-toggle" name="menu-toggle">
-    
+
         <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
             <nav>
                 <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                    <li><a class="lg:p-4 py-3 px-3 block text-red-600 border-b-2 border-transparent hover:border-red-600 hover:font-semibold hover:text-red-600 focus:border-red-600" href="index.html">Accueil</a></li>
-                    <li><a class="lg:p-4 py-3 px-3 block text-white font-normal border-b-2 bg-red-600 border-red-600 hover:border-red-600 focus:border-red-600" href="tournage.html">Tournage</a></li>
+                    <li><a class="lg:p-4 py-3 px-3 block text-red-600 border-b-2 border-transparent hover:border-red-600 hover:font-semibold hover:text-red-600 focus:border-red-600"
+                            href="index.html">Accueil</a></li>
+                    <li><a class="lg:p-4 py-3 px-3 block text-white font-normal border-b-2 bg-red-600 border-red-600 hover:border-red-600 focus:border-red-600"
+                            href="tournage.html">Tournage</a></li>
                 </ul>
-            </nav> 
+            </nav>
         </div>
     </header>
 
+    <section class="bg-blue-800 py-12 px-4 md:px-8 lg:mx-0 xl:px-16   ">
+        <div class="container  grid md:gap-16  lg:grid-cols-2 lg:flex flex-row-reverse  gap-8 items-center ">
+
+            <div class="md:pl-16 flex items-center justify-center">
+                <div class="grid grid-cols-2 grid-rows-3 gap-4 md:gap-6">
+                    <div class="col-span-2">
+                        <h2 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold mb-4">Faits divers</h2>
+                        <p class="text-white">Apprenez-en davantage sur les résultats du film Mario
+                        </p>
+                    </div>
+                    <div class="row-start-2">
+                        <h3 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold mr-2">44M</h3>
+                        <p class="text-sm md:text-base lg:text-base text-white">Vendu</p>
+                    </div>
+                    <div class="row-start-2">
+                        <h3 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold mr-2">324B</h3>
+                        <p class="text-sm md:text-base lg:text-base text-white">Contenu quotidien mis à jour</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold mr-2">12</h3>
+                        <p class="text-sm md:text-base lg:text-base text-white">Prix remportés</p>
+                    </div>
+                    <div class="row-start-3">
+                        <h3 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold mr-2">230K</h3>
+                        <p class="text-sm md:text-base lg:text-base text-white">Utilisateurs actifs par heure</p>
+                    </div>
+                    <div class="flex mt-4">
+                        <a href="#"
+                            class="bg-amber-400 hover:bg-amber-500 focus:bg-amber-500 text-base md:text-sm lg:text-base tracking-wide py-2 px-6 md:px-4 lg:px-6 rounded-full btn--boxShadowYellow">
+                            En savoir plus
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" md:flex md:justify-end mb-6 md:mb-0 lg:mb xl:flex  ">
+                <img class="h-auto max-w-full rounded-lg" src="Images/page-tournage-section-divers.png"
+                    alt="Image Mario Faits Divers">
+            </div>
+        </div>
+
+
+    </section>
+    <section
+        class="bg-red-600 container-fluid grid grid-cols-1 h-full p-12 justify-items-center md:items-center xl:px-16">
+        <div class="bg-white py-12 px-12 gap-4 rounded-xl md:py-12 md:px-12 xl:py-16 xl:px-20 xl:grid-cols-12 xl:gap-2">
+
+            <div class="md:invisible lg:visible grid grid-cols-3 grid-rows-2 gap-6 tail-hidden">
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-1.png" alt="Image de tournage 1">
+                    </figure>
+                </div>
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-2.png" alt="Image de tournage 2">
+                    </figure>
+                </div>
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-3.png" alt="Image de tournage 3">
+                    </figure>
+                </div>
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-4.png" alt="Image de tournage 3">
+                    </figure>
+                </div>
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-5.png" alt="Image de tournage 4">
+                    </figure>
+                </div>
+                <div>
+                    <figure
+                        class=" sm:col-start-2 sm:col-end-12 grid md:col-start-2 md:col-end-7 md:mr-2 xl:col-start-1 xl:col-end-5">
+                        <img class="object-cover rounded-lg w-full aspect-square"
+                            src="Images/page-tournage-section-tournage-6.png" alt="Image de tournage 5">
+                    </figure>
+                </div>
+            </div>
+            <div class="lg:hidden md:flex md:flex-col md:space-y-4 lg:space-y-0  lg:space-x-4 md:items-center">
+
+                <div class="flex space-x-4">
+                    <div>
+                        <img src="Images/page-tournage-section-tournage-1.png" alt="Image de tournage 1" />
+                    </div>
+                    <div>
+                        <img src="Images/page-tournage-section-tournage-2.png" alt="Image de tournage 2" />
+                    </div>
+                </div>
+
+                <div class="mt-5 flex items-center justify-center">
+                    <img src="Images/page-tournage-section-tournage-3.png" alt="Image de tournage 3" />
+                </div>
+
+                <div class="flex space-x-4 mt-5">
+                    <div>
+                        <img src="Images/page-tournage-section-tournage-4.png" alt="Image de tournage 4" />
+                    </div>
+                    <div>
+                        <img src="Images/page-tournage-section-tournage-5.png" alt="Image de tournage 5" />
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center mt-5">
+                    <img src="Images/page-tournage-section-tournage-6.png" alt="Image de tournage 6" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-blue-800 container-fluid   grid grid-cols-1 h-full p-12 md:items-center  xl:px-16">
+
+        <div class="place-items-center grid grid-cols-1 grid-rows-1 gap-4 mb-8 ">
+            <div class="cols-1">
+                <h1 class="text-3xl text-center text-red-600 font-semibold uppercase mb-6 md:text-left lg:text-4xl">
+                    Présentation de la direction artistique</h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-8 gap-4">
+            <div class="col-start-3 col-span-4  xl:pl-28 xl:pr-28">
+                <p class="text-center">Plongez dans un monde magique où l'imagination prend vie. Le film Mario vous entraîne dans une aventure épique, inspirée de l'univers bien-aimé du célèbre jeu vidéo. Découvrez une direction artistique saisissante qui donne vie à vos personnages préférés d'une manière tout à fait inédite.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 h-full  justify-items-center md:items-center  xl:px-16 mt-20">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-4 ">
+                <div>
+                    <div id="accordionFlushExample">
+                        <div
+                            class="border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                            <h2 class="mb-0" id="flush-headingOne">
+                                <button
+                                    class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                    type="button" data-te-collapse-init data-te-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Question : Quel acteur incarne le rôle principal de Mario dans le film ?
+                                    <span
+                                        class="-mr-1 ml-auto h-5 w-5 shrink-0  fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="!visible hidden border-0" data-te-collapse-item
+                                data-te-collapse-show aria-labelledby="flush-headingOne"
+                                data-te-parent="#accordionFlushExample">
+                                <div class="px-5 py-4">
+                                    L'acteur Chris Pratt incarne le rôle de Mario.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                            <h2 class="mb-0" id="flush-headingTwo">
+                                <button
+                                    class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                    type="button" data-te-collapse-init data-te-collapse-collapsed
+                                    data-te-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Question : Qui est le réalisateur du film Mario ?
+                                    <span
+                                        class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="!visible hidden border-0" data-te-collapse-item
+                                aria-labelledby="flush-headingTwo" data-te-parent="#accordionFlushExample">
+                                <div class="px-5 py-4">
+                                    Le réalisateur du film Mario est Aaron Horvath.
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                            <h2 class="mb-0" id="flush-headingThree">
+                                <button
+                                    class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                    type="button" data-te-collapse-init data-te-collapse-collapsed
+                                    data-te-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Question : Quel est le nom du Royaume présenté dans le film Mario ?
+                                    <span
+                                        class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="!visible hidden" data-te-collapse-item
+                                aria-labelledby="flush-headingThree" data-te-parent="#accordionFlushExample">
+                                <div class="px-5 py-4">
+                                    Le Royaume Champignon est le monde emblématique présenté dans le film.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                            <h2 class="mb-0" id="flush-headingFour">
+                                <button
+                                    class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                    type="button" data-te-collapse-init data-te-collapse-collapsed
+                                    data-te-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Question : Quelle est la date de sortie prévue pour le film Mario ?
+                                    <span
+                                        class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="!visible hidden border-0" data-te-collapse-item
+                                aria-labelledby="flush-headingFour" data-te-parent="#accordionFlushExample">
+                                <div class="px-5 py-4">
+                                    Le film Mario est prévu pour sortir en salles le 14 décembre de cette année.
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                            <h2 class="mb-0" id="flush-headingFive">
+                                <button
+                                    class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                    type="button" data-te-collapse-init data-te-collapse-collapsed
+                                    data-te-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Question : Quels sont les autres personnages emblématiques du jeu vidéo Mario qui apparaissent dans le film ?
+                                    <span
+                                        class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="!visible hidden" data-te-collapse-item
+                                aria-labelledby="flush-headingFive" data-te-parent="#accordionFlushExample">
+                                <div class="px-5 py-4">
+                                    Les personnages comme Luigi, la Princesse Peach, Bowser et Yoshi font 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="accordionExample5"></div>
+                    <div class=" dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingOne5"></h2>
+
+                    </div>
+                    <div
+                        class=" border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingTwo5">
+                            <button
+                                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed
+                                data-te-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                                Question : Quelle est la bande originale du film Mario ?
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo5" class="!visible hidden" data-te-collapse-item
+                            aria-labelledby="headingTwo5">
+                            <div class="px-5 py-4">
+                                La musique du film Mario est composée par Mark Mothersbaugh.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingThree5">
+                            <button
+                                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:[&[data-te-collapse-collapsed]]:transition-none"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed
+                                data-te-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                                Question : Dans quel studio de production le film a-t-il été réalisé ?
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree5" class="!visible hidden" data-te-collapse-item
+                            aria-labelledby="headingThree5">
+                            <div class="px-5 py-4">
+                                Le film Mario a été réalisé par le studio Illumination Entertainment.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingFour">
+                            <button
+                                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:red dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed
+                                data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Question : Combien de temps a pris la réalisation du film Mario, depuis l'idée initiale jusqu'à la sortie en salle ?
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="!visible hidden" data-te-collapse-item
+                            aria-labelledby="headingFour">
+                            <div class="px-5 py-4">
+                                La réalisation du film a pris environ quatre ans.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class=" my-8 border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingFive">
+                            <button
+                                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:[&[data-te-collapse-collapsed]]:transition-none"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed
+                                data-te-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Question : Quels sont les genres cinématographiques auxquels le film Mario appartient ?
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="!visible hidden" data-te-collapse-item
+                            aria-labelledby="headingFive">
+                            <div class="px-5 py-4">
+                                Le film Mario est une comédie d'aventure animée.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="border-dashed border-2 border-red-500 bg-red-900 dark:border-neutral-600 dark:bg-neutral-800 my-8">
+                        <h2 class="mb-0" id="headingSix"></h2>
+                        <button
+                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            Question : Comment les critiques ont-ils réagi après avoir vu le film Mario ?
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+
+                        <div id="collapseSix" class="!visible hidden" data-te-collapse-item
+                            aria-labelledby="headingSix">
+                            <div class="px-5 py-4">
+                                Les critiques ont globalement été positives, soulignant l'animation de qualité et le plaisir nostalgique qu'il offre aux fans de la franchise.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+
+
+    <footer class="bg-red-600  container-fluid grid grid-cols-1 h-full p-12 md:items-center xl:px-16 ">
+
+        <div class="sm:grid grid-cols-12  grid-rows-1 gap-4 ml-10  text-sm">
+            <div class="col-start-1 col-end-3 flex items-center  ">
+                <p>+XX 000 000</p>
+            </div>
+            <div class="col-start-3 flex items-center">
+                <p>hello@purthvi.desing</p>
+            </div>
+            <div class="col-span-3 col-start-9 col-end-12 flex items-center">
+                <p>
+                    Karen Poulin Larochelle et Anel Grebovic
+                </p>
+            </div>
+
+            <div class="col-start-12">
+
+                <div class="flex flex-row">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <svg class="bi bi-facebook my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 
+                                    1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 
+                                    6.75-7.951z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank">
+                        <svg class="bi bi-twitter my-2 mr-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 
+                            1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 
+                            6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 
+                            13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <svg class="bi bi-instagram my-2 fill-black hover:fill-blue-800 focus:fill-blue-800"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 
+                                    4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 
+                                    1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 
+                                    1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 
+                                    3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 
+                                    1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 
+                                    1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 
+                                    0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 
+                                    0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 
+                                    1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 
+                                    1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </footer>        
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
+
 </html>
